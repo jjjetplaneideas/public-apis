@@ -1,9 +1,8 @@
 name: "Validate links"
 
 on:
+  # Budget pause: explicitly trigger when a build or scan is needed.
   workflow_dispatch:
-  schedule:
-    - cron:  '0 0 * * *'
 
 env:
   FILENAME: README.md
